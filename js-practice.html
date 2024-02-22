@@ -62,6 +62,53 @@
     // Strings on my own
     let greeting = 'My name is';
     console.log(greeting + " " + name + ".");
+
+    /*
+    If you had a function that took two arguments and returned their difference ...
+    */
+    function subtractionMachine(argument1, argument2) {
+      let newValue = argument1 - argument2;
+      return newValue;
+    }
+
+    console.log("the subtraction machine");
+    /*
+    We can create a variable "difference" and set it to the result or "return"
+    of the subtractionMachine function. In this case below, we are giving the
+    subractionMachine the "arguments" of 5 and 3.
+    */
+    let difference = subtractionMachine(5, 3);
+
+    /*
+    You can the log the function's value by logging the variable ...
+    */
+    console.log(difference);
+
+    /*
+    If I didn't want to create a variable first, I can 
+    log the returned value directly:
+    */
+    console.log(subtractionMachine(5, 3));
+
+    console.log("Using functions:");
+
+    // function to make square numbers
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+
+    let try01 = makeSquare(3);
+    console.log(try01);
+    
+    // Functions on my own
+    function makeName(firstName, middleName, lastName) {
+      return firstName + ' ' + middleName + ' ' + lastName;
+    }
+
+    console.log(makeName('Christian', 'Clay', 'McDonald'));
+    console.log(makeName('Justin', 'Dimzon', 'Slaughter'));
+    console.log(makeName('Robert', '"Beto"', "O'Rourke"));
   </script>
 </body>
 </html>
