@@ -59,6 +59,7 @@
 
     let name = firstName + " " + middleName + " " + lastName;
     console.log(name)
+
     // Strings on my own
     let greeting = 'My name is';
     console.log(greeting + " " + name + ".");
@@ -100,17 +101,26 @@
 
     let try01 = makeSquare(3);
     console.log(try01);
+
+    let try02 = makeSquare(6);
+    console.log(try02);
+
+    let try03 = makeSquare(9);
+    console.log(try03);
     
     // Functions on my own
     function makeName(firstName, middleName, lastName) {
-      return firstName + ' ' + middleName + ' ' + lastName;
+      let name = firstName + " " + middleName + " " + lastName;
+      return name;
     }
+    let name01 = makeName("Christian", "Clay", "McDonald");
+    console.log(name01);
 
-    console.log(makeName('Christian', 'Clay', 'McDonald'));
-    console.log(makeName('Justin', 'Dimzon', 'Slaughter'));
-    console.log(makeName('Robert', '"Beto"', "O'Rourke"));
+    let name02 = makeName("Slaughter", "Dimzon", "Slaughter");
+    console.log(name02);
 
-    console.log("testing " + middleName.length)
+    let name03 = makeName("Robert", '"Beto"', "O'Rourke");
+    console.log(name03);
 
     // Just a log to show in our Console
     console.log("Making a better name function:");
@@ -126,6 +136,7 @@
 
     console.log(makeBetterName("Joan", "Marie", "Larkin"));
     console.log(makeBetterName("John", "F", "Kennedy"));
+    console.log(makeBetterName("Justin", "D", "Slaughter"))
 
     console.log("scoreCompare function");
     function scoreCompare(home, away) {
@@ -137,6 +148,7 @@
         return "It was a tie!";
       }
     }
+
     console.log(scoreCompare(5,3));
     console.log(scoreCompare(3,5));
     console.log(scoreCompare(4,4));
